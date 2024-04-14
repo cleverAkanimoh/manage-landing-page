@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.get-started {
+  color: #fff;
+  background-color: hsl(12, 88%, 59%);
+  box-shadow: hsla(12, 88%, 59%, 0.2) 1px 4px;
+  padding: 1rem 3rem;
+}
+
+button:hover {
+  opacity: 50%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  padding: 0.15rem;
+}
+
+body {
+  font-family: "Be Vietnam Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: hsl(225, 5%, 68%);
+}
+
+/* nav */
+
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  width: 100px;
+}
+#check,
+.nav-started {
+  display: none;
+}
+.toggle {
+  cursor: pointer;
+}
+.toggle img {
+  width: 20px;
+}
+.close {
+  display: none;
+}
+#check:checked ~ .close {
+  display: inline-block;
+}
+#check:checked ~ .menu {
+  display: none;
+}
+#check:checked ~ #dropdown {
+  height: 100%;
+  opacity: 100%;
+}
+
+#dropdown {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  top: 4.5rem;
+  left: 0;
+  border-radius: 0;
+  padding: 0 1rem;
+  box-shadow: #00000025 2px 1px;
+  background-image: linear-gradient(to top, #000000a1, transparent);
+  transition: all 500ms;
+}
+
+#dropdown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.15rem;
+}
+
+#dropdown li {
+  font-weight: 500;
+}
+/* main arena */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 0 2rem; */
+  text-align: center;
+}
+
+#welcome-image {
+  width: 88%;
+}
+
+h1, h2 {
+  color:  hsl(228, 39%, 23%);
+}
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
